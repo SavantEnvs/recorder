@@ -1,0 +1,13 @@
+# .dockerignore for the commit-image build: bake in the FULL repo (including .git history, which the
+# grader uses); drop only local build outputs and editor/OS cruft.
+mayhem/obj-*/
+*.o
+*.a
+*.so
+*.dylib
+ot-recorder
+ocat
+config.mk
+.DS_Store
+*.swp
+*~

@@ -1,0 +1,9 @@
+project: savantenvs/recorder
+target: fuzz_handle_message
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_handle_message/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_handle_message
+    libfuzzer: true
+    timeout: 5
